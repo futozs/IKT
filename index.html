@@ -7,14 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weboldalam</title>
     <style>
-    img {
-        max-width: 100%; 
-        height: auto; 
-        display: block; 
-        margin: 10px auto; 
-        border-radius: 8px; 
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-    }       
+  html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+img {
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+     
     </style>
 </head>
 <body>

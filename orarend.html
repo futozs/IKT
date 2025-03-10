@@ -3,238 +3,308 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Órarendem</title>
+    <title>9.B Órarend</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        th {
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #3498db;
+            color: white;
+        }
+        
+        td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        
+        .ora-oszlop {
+            text-align: center;
+            font-weight: bold;
+            background-color: #f2f2f2;
+            width: 12%;
+        }
+        
+        .nap-oszlop {
+            width: 17.6%;
+        }
+        
+        .tantargy {
+            font-weight: bold;
+        }
+        
+        .osztaly {
+            font-size: 0.9em;
+        }
+        
+        .terem {
+            font-size: 0.8em;
+            color: #7f8c8d;
+        }
+        
+        .ures-cella {
+            background-color: #fafafa;
+        }
+    </style>
 </head>
-<body style="font-family: Arial, sans-serif; margin: 0; padding: 20px; background-color: #f5f5f5;">
-    <h1 style="text-align: center; color: #2c3e50; margin-bottom: 20px;">9.B Órarend</h1>
+<body>
+    <h1>9.B Órarend</h1>
     
-    <table style="width: 100%; border-collapse: collapse; background-color: white; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+    <table>
         <thead>
-            <tr style="background-color: #3498db; color: white;">
-                <th style="padding: 10px; border: 1px solid #ddd; width: 12%;">Óra</th>
-                <th style="padding: 10px; border: 1px solid #ddd; width: 17.6%;">Hétfő<br></th>
-                <th style="padding: 10px; border: 1px solid #ddd; width: 17.6%;">Kedd<br></th>
-                <th style="padding: 10px; border: 1px solid #ddd; width: 17.6%;">Szerda<br></th>
-                <th style="padding: 10px; border: 1px solid #ddd; width: 17.6%;">Csütörtök<br></th>
-                <th style="padding: 10px; border: 1px solid #ddd; width: 17.6%;">Péntek<br></th>
+            <tr>
+                <th>Óra</th>
+                <th class="nap-oszlop">Hétfő<br></th>
+                <th class="nap-oszlop">Kedd<br></th>
+                <th class="nap-oszlop">Szerda<br></th>
+                <th class="nap-oszlop">Csütörtök<br></th>
+                <th class="nap-oszlop">Péntek<br></th>
             </tr>
         </thead>
         <tbody>
             <!-- 0. óra -->
             <tr>
-                <td style="padding: 10px; border: 1px solid #ddd; text-align: center; font-weight: bold; background-color: #f2f2f2;">0</td>
-                <td style="padding: 10px; border: 1px solid #ddd;"></td>
-                <td style="padding: 10px; border: 1px solid #ddd;">
-                    <div style="font-weight: bold;">Angol nyelv</div>
-                    <div style="font-size: 0.9em;">9. B 1. Csoport</div>
-                    <div style="font-size: 0.8em; color: #7f8c8d;">25</div>
+                <td class="ora-oszlop">0</td>
+                <td>
+                    <div class="tantargy">Osztályfőnöki</div>
+                    <div class="osztaly">9. B</div>
+                    <div class="terem">313</div>
                 </td>
-                <td style="padding: 10px; border: 1px solid #ddd;">
-                    <div style="font-weight: bold;">Osztályfőnöki</div>
-                    <div style="font-size: 0.9em;">9. B</div>
-                    <div style="font-size: 0.8em; color: #7f8c8d;">313</div>
-                </td>
-                <td style="padding: 10px; border: 1px solid #ddd;">
-                    <div style="font-weight: bold;">Matematika</div>
-                    <div style="font-size: 0.9em;">9. B 1. Csoport</div>
-                    <div style="font-size: 0.8em; color: #7f8c8d;">212</div>
-                </td>
-                <td style="padding: 10px; border: 1px solid #ddd;">
-                    <div style="font-weight: bold;">Komplex természettudomány</div>
-                    <div style="font-size: 0.9em;">9. B</div>
-                    <div style="font-size: 0.8em; color: #7f8c8d;">313</div>
-                </td>
+                <td class="ures-cella"></td>
+                <td class="ures-cella"></td>
+                <td class="ures-cella"></td>
+                <td class="ures-cella"></td>
             </tr>
             <!-- 1. óra -->
             <tr>
-                <td style="padding: 10px; border: 1px solid #ddd; text-align: center; font-weight: bold; background-color: #f2f2f2;">1</td>
-                <td style="padding: 10px; border: 1px solid #ddd;">
-                    <div style="font-weight: bold;">Történelem</div>
-                    <div style="font-size: 0.9em;">9. B</div>
-                    <div style="font-size: 0.8em; color: #7f8c8d;">313</div>
+                <td class="ora-oszlop">1</td>
+                <td>
+                    <div class="tantargy">Történelem</div>
+                    <div class="osztaly">9. B</div>
+                    <div class="terem">313</div>
                 </td>
-                <td style="padding: 10px; border: 1px solid #ddd;">
-                    <div style="font-weight: bold;">Matematika</div>
-                    <div style="font-size: 0.9em;">9. B 1. Csoport</div>
-                    <div style="font-size: 0.8em; color: #7f8c8d;">313</div>
+                <td>
+                    <div class="tantargy">Matematika</div>
+                    <div class="osztaly">9. B 1. Csoport</div>
+                    <div class="terem">313</div>
                 </td>
-                <td style="padding: 10px; border: 1px solid #ddd;">
-                    <div style="font-weight: bold;">Matematika</div>
-                    <div style="font-size: 0.9em;">9. B 1. Csoport</div>
-                    <div style="font-size: 0.8em; color: #7f8c8d;">313</div>
+                <td>
+                    <div class="tantargy">Matematika</div>
+                    <div class="osztaly">9. B 1. Csoport</div>
+                    <div class="terem">313</div>
                 </td>
-                <td style="padding: 10px; border: 1px solid #ddd;">
-                    <div style="font-weight: bold;">Matematika</div>
-                    <div style="font-size: 0.9em;">9. B 1. Csoport</div>
-                    <div style="font-size: 0.8em; color: #7f8c8d;">212</div>
+                <td>
+                    <div class="tantargy">Matematika</div>
+                    <div class="osztaly">9. B 1. Csoport</div>
+                    <div class="terem">212</div>
                 </td>
-                <td style="padding: 10px; border: 1px solid #ddd;">
-                    <div style="font-weight: bold;">Angol nyelv</div>
-                    <div style="font-size: 0.9em;">9. B 1. Csoport</div>
-                    <div style="font-size: 0.8em; color: #7f8c8d;">313</div>
+                <td>
+                    <div class="tantargy">Angol nyelv</div>
+                    <div class="osztaly">9. B 1. Csoport</div>
+                    <div class="terem">313</div>
                 </td>
             </tr>
             <!-- 2. óra -->
             <tr>
-                <td style="padding: 10px; border: 1px solid #ddd; text-align: center; font-weight: bold; background-color: #f2f2f2;">2</td>
-                <td style="padding: 10px; border: 1px solid #ddd;">
-                    <div style="font-weight: bold;">Magyar nyelv és irodalom</div>
-                    <div style="font-size: 0.9em;">9. B</div>
-                    <div style="font-size: 0.8em; color: #7f8c8d;">313</div>
+                <td class="ora-oszlop">2</td>
+                <td>
+                    <div class="tantargy">Magyar nyelv és irodalom</div>
+                    <div class="osztaly">9. B</div>
+                    <div class="terem">313</div>
                 </td>
-                <td style="padding: 10px; border: 1px solid #ddd;">
-                    <div style="font-weight: bold;">Történelem</div>
-                    <div style="font-size: 0.9em;">9. B</div>
-                    <div style="font-size: 0.8em; color: #7f8c8d;">313</div>
+                <td>
+                    <div class="tantargy">Történelem</div>
+                    <div class="osztaly">9. B</div>
+                    <div class="terem">313</div>
                 </td>
-                <td style="padding: 10px; border: 1px solid #ddd;">
-                    <div style="font-weight: bold;">Angol nyelv</div>
-                    <div style="font-size: 0.9em;">9. B 1. Csoport</div>
-                    <div style="font-size: 0.8em; color: #7f8c8d;">203</div>
+                <td>
+                    <div class="tantargy">Angol nyelv</div>
+                    <div class="osztaly">9. B 1. Csoport</div>
+                    <div class="terem">203</div>
                 </td>
-                <td style="padding: 10px; border: 1px solid #ddd;">
-                    <div style="font-weight: bold;">Angol nyelv</div>
-                    <div style="font-size: 0.9em;">9. B 1. Csoport</div>
-                    <div style="font-size: 0.8em; color: #7f8c8d;">112</div>
+                <td>
+                    <div class="tantargy">Angol nyelv</div>
+                    <div class="osztaly">9. B 1. Csoport</div>
+                    <div class="terem">112</div>
                 </td>
-                <td style="padding: 10px; border: 1px solid #ddd;">
-                    <div style="font-weight: bold;">Digitális kultúra</div>
-                    <div style="font-size: 0.9em;">9. B 1. Csoport</div>
-                    <div style="font-size: 0.8em; color: #7f8c8d;">29</div>
+                <td>
+                    <div class="tantargy">Digitális kultúra</div>
+                    <div class="osztaly">9. B 1. Csoport</div>
+                    <div class="terem">29</div>
                 </td>
             </tr>
             <!-- 3. óra -->
             <tr>
-                <td style="padding: 10px; border: 1px solid #ddd; text-align: center; font-weight: bold; background-color: #f2f2f2;">3</td>
-                <td style="padding: 10px; border: 1px solid #ddd;">
-                    <div style="font-weight: bold;">Testnevelés</div>
-                    <div style="font-size: 0.9em;">9. B</div>
-                    <div style="font-size: 0.8em; color: #7f8c8d;">tornaterem</div>
+                <td class="ora-oszlop">3</td>
+                <td>
+                    <div class="tantargy">Testnevelés</div>
+                    <div class="osztaly">9. B</div>
+                    <div class="terem">tornaterem</div>
                 </td>
-                <td style="padding: 10px; border: 1px solid #ddd;">
-                    <div style="font-weight: bold;">Magyar nyelv és irodalom</div>
-                    <div style="font-size: 0.9em;">9. B 1. Csoport</div>
-                    <div style="font-size: 0.8em; color: #7f8c8d;">313</div>
+                <td>
+                    <div class="tantargy">Magyar nyelv és irodalom</div>
+                    <div class="osztaly">9. B 1. Csoport</div>
+                    <div class="terem">313</div>
                 </td>
-                <td style="padding: 10px; border: 1px solid #ddd;">
-                    <div style="font-weight: bold;">Történelem</div>
-                    <div style="font-size: 0.9em;">9. B</div>
-                    <div style="font-size: 0.8em; color: #7f8c8d;">313</div>
+                <td>
+                    <div class="tantargy">Történelem</div>
+                    <div class="osztaly">9. B</div>
+                    <div class="terem">313</div>
                 </td>
-                <td style="padding: 10px; border: 1px solid #ddd;">
-                    <div style="font-weight: bold;">Programozási alapok</div>
-                    <div style="font-size: 0.9em;">9. B 1. Csoport</div>
-                    <div style="font-size: 0.8em; color: #7f8c8d;">310</div>
+                <td>
+                    <div class="tantargy">Programozási alapok</div>
+                    <div class="osztaly">9. B 1. Csoport</div>
+                    <div class="terem">310</div>
                 </td>
-                <td style="padding: 10px; border: 1px solid #ddd;">
-                    <div style="font-weight: bold;">Digitális kultúra</div>
-                    <div style="font-size: 0.9em;">9. B 1. Csoport</div>
-                    <div style="font-size: 0.8em; color: #7f8c8d;">29</div>
+                <td>
+                    <div class="tantargy">Digitális kultúra</div>
+                    <div class="osztaly">9. B 1. Csoport</div>
+                    <div class="terem">29</div>
                 </td>
             </tr>
             <!-- 4. óra -->
             <tr>
-                <td style="padding: 10px; border: 1px solid #ddd; text-align: center; font-weight: bold; background-color: #f2f2f2;">4</td>
-                <td style="padding: 10px; border: 1px solid #ddd;">
-                    <div style="font-weight: bold;">IKT projektmunka I.</div>
-                    <div style="font-size: 0.9em;">9. B 1. Csoport</div>
-                    <div style="font-size: 0.8em; color: #7f8c8d;">204</div>
+                <td class="ora-oszlop">4</td>
+                <td>
+                    <div class="tantargy">IKT projektmunka I.</div>
+                    <div class="osztaly">9. B 1. Csoport</div>
+                    <div class="terem">204</div>
                 </td>
-                <td style="padding: 10px; border: 1px solid #ddd;">
-                    <div style="font-weight: bold;">Magyar nyelv és irodalom</div>
-                    <div style="font-size: 0.9em;">9. B</div>
-                    <div style="font-size: 0.8em; color: #7f8c8d;">313</div>
+                <td>
+                    <div class="tantargy">Magyar nyelv és irodalom</div>
+                    <div class="osztaly">9. B</div>
+                    <div class="terem">313</div>
                 </td>
-                <td style="padding: 10px; border: 1px solid #ddd;">
-                    <div style="font-weight: bold;">Testnevelés</div>
-                    <div style="font-size: 0.9em;">9. B</div>
-                    <div style="font-size: 0.8em; color: #7f8c8d;">313</div>
+                <td>
+                    <div class="tantargy">Testnevelés</div>
+                    <div class="osztaly">9. B</div>
+                    <div class="terem">313</div>
                 </td>
-                <td style="padding: 10px; border: 1px solid #ddd;">
-                    <div style="font-weight: bold;">Programozási alapok</div>
-                    <div style="font-size: 0.9em;">9. B 1. Csoport</div>
-                    <div style="font-size: 0.8em; color: #7f8c8d;">310</div>
+                <td>
+                    <div class="tantargy">Programozási alapok</div>
+                    <div class="osztaly">9. B 1. Csoport</div>
+                    <div class="terem">310</div>
                 </td>
-                <td style="padding: 10px; border: 1px solid #ddd;">
-                    <div style="font-weight: bold;">Magyar nyelv és irodalom</div>
-                    <div style="font-size: 0.9em;">9. B 1. Csoport</div>
-                    <div style="font-size: 0.8em; color: #7f8c8d;">311</div>
+                <td>
+                    <div class="tantargy">Magyar nyelv és irodalom</div>
+                    <div class="osztaly">9. B 1. Csoport</div>
+                    <div class="terem">311</div>
                 </td>
             </tr>
             <!-- 5. óra -->
             <tr>
-                <td style="padding: 10px; border: 1px solid #ddd; text-align: center; font-weight: bold; background-color: #f2f2f2;">5</td>
-                <td style="padding: 10px; border: 1px solid #ddd;">
-                    <div style="font-weight: bold;">Komplex természettudomány</div>
-                    <div style="font-size: 0.9em;">9. B</div>
-                    <div style="font-size: 0.8em; color: #7f8c8d;">313</div>
+                <td class="ora-oszlop">5</td>
+                <td>
+                    <div class="tantargy">Komplex természettudomány</div>
+                    <div class="osztaly">9. B</div>
+                    <div class="terem">313</div>
                 </td>
-                <td style="padding: 10px; border: 1px solid #ddd;">
-                    <div style="font-weight: bold;">Magyar nyelv és irodalom</div>
-                    <div style="font-size: 0.9em;">9. B</div>
-                    <div style="font-size: 0.8em; color: #7f8c8d;">313</div>
+                <td>
+                    <div class="tantargy">Magyar nyelv és irodalom</div>
+                    <div class="osztaly">9. B</div>
+                    <div class="terem">313</div>
                 </td>
-                <td style="padding: 10px; border: 1px solid #ddd;">
-                    <div style="font-weight: bold;">Informatikai és távközlési alapok I.</div>
-                    <div style="font-size: 0.9em;">9. B 1. Csoport</div>
-                    <div style="font-size: 0.8em; color: #7f8c8d;">202</div>
+                <td>
+                    <div class="tantargy">Informatikai és távközlési alapok I.</div>
+                    <div class="osztaly">9. B 1. Csoport</div>
+                    <div class="terem">202</div>
                 </td>
-                <td style="padding: 10px; border: 1px solid #ddd;">
-                    <div style="font-weight: bold;">Komplex természettudomány</div>
-                    <div style="font-size: 0.9em;">9. B</div>
-                    <div style="font-size: 0.8em; color: #7f8c8d;">313</div>
+                <td>
+                    <div class="tantargy">Komplex természettudomány</div>
+                    <div class="osztaly">9. B</div>
+                    <div class="terem">313</div>
                 </td>
-                <td style="padding: 10px; border: 1px solid #ddd;"></td>
+                <td class="ures-cella"></td>
             </tr>
             <!-- 6. óra -->
             <tr>
-                <td style="padding: 10px; border: 1px solid #ddd; text-align: center; font-weight: bold; background-color: #f2f2f2;">6</td>
-                <td style="padding: 10px; border: 1px solid #ddd;">
-                    <div style="font-weight: bold;">IKT projektmunka I.</div>
-                    <div style="font-size: 0.9em;">9. B 1. Csoport</div>
-                    <div style="font-size: 0.8em; color: #7f8c8d;">310</div>
+                <td class="ora-oszlop">6</td>
+                <td>
+                    <div class="tantargy">IKT projektmunka I.</div>
+                    <div class="osztaly">9. B 1. Csoport</div>
+                    <div class="terem">310</div>
                 </td>
-                <td style="padding: 10px; border: 1px solid #ddd;">
-                    <div style="font-weight: bold;">Honvédelem</div>
-                    <div style="font-size: 0.9em;">9. B</div>
-                    <div style="font-size: 0.8em; color: #7f8c8d;">313</div>
+                <td>
+                    <div class="tantargy">Honvédelem</div>
+                    <div class="osztaly">9. B</div>
+                    <div class="terem">313</div>
                 </td>
-                <td style="padding: 10px; border: 1px solid #ddd;">
-                    <div style="font-weight: bold;">Informatikai és távközlési alapok I.</div>
-                    <div style="font-size: 0.9em;">9. B 1. Csoport</div>
-                    <div style="font-size: 0.8em; color: #7f8c8d;">202</div>
+                <td>
+                    <div class="tantargy">Informatikai és távközlési alapok I.</div>
+                    <div class="osztaly">9. B 1. Csoport</div>
+                    <div class="terem">202</div>
                 </td>
-                <td style="padding: 10px; border: 1px solid #ddd;">
-                    <div style="font-weight: bold;">Testnevelés</div>
-                    <div style="font-size: 0.9em;">9. B</div>
-                    <div style="font-size: 0.8em; color: #7f8c8d;">tornaterem</div>
+                <td>
+                    <div class="tantargy">Testnevelés</div>
+                    <div class="osztaly">9. B</div>
+                    <div class="terem">tornaterem</div>
                 </td>
-                <td style="padding: 10px; border: 1px solid #ddd;"></td>
+                <td class="ures-cella"></td>
             </tr>
             <!-- 7. óra -->
             <tr>
-                <td style="padding: 10px; border: 1px solid #ddd; text-align: center; font-weight: bold; background-color: #f2f2f2;">7</td>
-                <td style="padding: 10px; border: 1px solid #ddd;">
-                    <div style="font-weight: bold;">Angol nyelv</div>
-                    <div style="font-size: 0.9em;">9. B 1. Csoport</div>
-                    <div style="font-size: 0.8em; color: #7f8c8d;">114</div>
+                <td class="ora-oszlop">7</td>
+                <td>
+                    <div class="tantargy">Angol nyelv</div>
+                    <div class="osztaly">9. B 1. Csoport</div>
+                    <div class="terem">114</div>
                 </td>
-                <td style="padding: 10px; border: 1px solid #ddd;">
-                    <div style="font-weight: bold;">Honvédelem</div>
-                    <div style="font-size: 0.9em;">9. B</div>
-                    <div style="font-size: 0.8em; color: #7f8c8d;">313</div>
+                <td>
+                    <div class="tantargy">Honvédelem</div>
+                    <div class="osztaly">9. B</div>
+                    <div class="terem">313</div>
                 </td>
-                <td style="padding: 10px; border: 1px solid #ddd;">
-                    <div style="font-weight: bold;">Informatikai és távközlési alapok I.</div>
-                    <div style="font-size: 0.9em;">9. B 1. Csoport</div>
-                    <div style="font-size: 0.8em; color: #7f8c8d;">202</div>
+                <td>
+                    <div class="tantargy">Informatikai és távközlési alapok I.</div>
+                    <div class="osztaly">9. B 1. Csoport</div>
+                    <div class="terem">202</div>
                 </td>
-                <td style="padding: 10px; border: 1px solid #ddd;">
-                    <div style="font-weight: bold;">Testnevelés</div>
-                    <div style="font-size: 0.9em;">9. B</div>
-                    <div style="font-size: 0.8em; color: #7f8c8d;">tornaterem</div>
+                <td>
+                    <div class="tantargy">Testnevelés</div>
+                    <div class="osztaly">9. B</div>
+                    <div class="terem">tornaterem</div>
                 </td>
-                <td style="padding: 10px; border: 1px solid #ddd;"></td>
+                <td class="ures-cella"></td>
+            </tr>
+            <!-- 8. óra -->
+            <tr>
+                <td class="ora-oszlop">8</td>
+                <td class="ures-cella"></td>
+                <td>
+                    <div class="tantargy">Angol nyelv</div>
+                    <div class="osztaly">9. B 1. Csoport</div>
+                    <div class="terem">25</div>
+                </td>
+                <td>
+                    <div class="tantargy">Osztályfőnöki</div>
+                    <div class="osztaly">9. B</div>
+                    <div class="terem">313</div>
+                </td>
+                <td>
+                    <div class="tantargy">Matematika</div>
+                    <div class="osztaly">9. B 1. Csoport</div>
+                    <div class="terem">212</div>
+                </td>
+                <td class="ures-cella"></td>
             </tr>
         </tbody>
     </table>

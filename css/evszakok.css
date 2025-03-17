@@ -1,6 +1,6 @@
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: linear-gradient(135deg, hsla(48, 100%, 50%, 1) 0%, hsla(63, 100%, 50%, 1) 100%);
+    background-color: orange;
 }
 
 h1{
